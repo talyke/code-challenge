@@ -1,20 +1,7 @@
 
-<template>
-    <div class="alert" v-text="message"></div>
-</template>
+import Vue from 'vue';
+import Alert from './Alert.vue';
 
-<script>
-export default {
-    data() {
-        return {
-            message: 'I am an alert.'
-        };
-    }
-};
-</script>
-
-<style>
-.alert {
-    background: red;
-}
-</style>
+new Vue({
+    el: '#app',
+    components: { Alert }
